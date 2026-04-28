@@ -1,0 +1,64 @@
+name: timeloom
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  flutter_screenutil: ^5.9.3
+  get: ^4.7.2
+  styled_widget: ^0.4.1
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  intl: ^0.20.2
+  flutter_switch: ^0.3.2
+  fluttertoast: ^8.2.5
+  image_picker: ^1.2.1
+  url_launcher: ^6.3.2
+  file_picker: ^11.0.2
+  open_filex: ^4.7.0
+  path_provider: ^2.1.5
+  permission_handler: ^12.0.1
+  record: ^6.0.0
+  just_audio: ^0.9.46
+  uuid: ^4.5.1
+  flutter_timezone: ^3.0.0
+  package_info_plus: ^8.0.0
+  flutter_inappwebview: ^6.1.5
+  video_player: ^2.9.2
+  device_info_plus: ^10.1.0
+  dio: ^5.4.3+1
+  chewie: ^1.8.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+  # flutter pub run flutter_launcher_icons:main
+flutter_launcher_icons:
+  image_path: "assets/121.png"
+  android: true
+  ios: true
+  web:
+    generate: true
+    image_path: "assets/121.png"
+    background_color: "#FFFFFF"
+    theme_color: "#FFFFFF"
+
+# Workaround: objective_c 9.2+ iOS binaries can fail device install with
+# 0xe8008014 (invalid code signature). See dart-lang/native#3004.
+dependency_overrides:
+  objective_c: 9.1.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
