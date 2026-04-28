@@ -44,12 +44,12 @@ dev_dependencies:
 
   # flutter pub run flutter_launcher_icons:main
 flutter_launcher_icons:
-  image_path: "assets/121.png"
+  image_path: "assets/time.png"
   android: true
   ios: true
   web:
     generate: true
-    image_path: "assets/121.png"
+    image_path: "assets/time.png"
     background_color: "#FFFFFF"
     theme_color: "#FFFFFF"
 

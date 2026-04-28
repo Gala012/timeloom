@@ -11,8 +11,8 @@ class TimeloomBackView extends GetView<TimeloomBackLogic> {
     return Scaffold(
       body: Center(
         child: Obx(
-          () => controller.ihcyrpm.value
-              ? const CircularProgressIndicator(color: Colors.blueAccent)
+          () => controller.tyjwaqsg.value
+              ? const CircularProgressIndicator(color: Colors.black)
               : buildError(),
         ),
       ),
@@ -26,7 +26,7 @@ class TimeloomBackView extends GetView<TimeloomBackLogic> {
         children: [
           IconButton(
             onPressed: () {
-              controller.pwxn();
+              controller.ebmctgu();
             },
             icon: const Icon(
               Icons.restart_alt,

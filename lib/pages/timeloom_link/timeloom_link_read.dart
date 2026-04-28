@@ -24,7 +24,7 @@ class TimeloomLinkRead extends GetView<TimeloomBackLogic> {
         body: SafeArea(
           child: InAppWebView(
             initialUrlRequest: URLRequest(
-              url: WebUri.uri(Uri.parse(controller.emazuxkr.value)),
+              url: WebUri.uri(Uri.parse(controller.sfwzxq.value)),
             ),
             initialSettings: InAppWebViewSettings(
               cacheEnabled: true,

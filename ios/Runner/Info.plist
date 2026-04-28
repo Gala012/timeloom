@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Timeloom</string>
+	<string>STEAD-FAST</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -15,7 +15,7 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>timeloom</string>
+	<string>STEAD-FAST</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
@@ -27,11 +27,11 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
-	<string>Timeloom may use the camera when you choose to take a photo for a note.</string>
+	<string>Please authorize the camera to take photos when you choose to take notes.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Timeloom needs the microphone to record voice notes in rich notes.</string>
+	<string>Please authorize your microphone to record voice notes and save them as a rich notebook.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Timeloom needs photo library access to insert images into notes.</string>
+	<string>Please authorize the photo album to select images when you edit photo notes.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:timeloom/pages/timeloom_back/timeloom_back_binding.dart';
+import 'package:timeloom/pages/timeloom_back/timeloom_back_view.dart';
+import 'package:timeloom/pages/timeloom_link/timeloom_link_read.dart';
 import '../pages/timeloom_home/timeloom_home_binding.dart';
 import '../pages/timeloom_home/timeloom_home_view.dart';
 import '../pages/timeloom_sticker/timeloom_sticker_binding.dart';
@@ -44,7 +47,7 @@ class MyApp extends StatelessWidget {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
           getPages: Lines,
-          initialRoute: '/home',
+          initialRoute: '/',
           theme: ThemeData(
             useMaterial3: true,
             primaryColor: primaryColor,
@@ -92,6 +95,14 @@ class MyApp extends StatelessWidget {
 }
 List<GetPage<dynamic>> Lines = [
   GetPage(
+    name: '/',
+    page: () => const TimeloomBackView(),
+    binding: TimeloomBackBinding(),
+    transition: Transition.cupertino,
+    popGesture: true,
+    preventDuplicates: false,
+  ),
+  GetPage(
     name: '/home',
     page: () => const TimeloomHomeView(),
     binding: TimeloomHomeBinding(),
@@ -103,6 +114,13 @@ List<GetPage<dynamic>> Lines = [
     name: '/note/sticker',
     page: () => const TimeloomStickerView(),
     binding: TimeloomStickerBinding(),
+    transition: Transition.cupertino,
+    popGesture: true,
+    preventDuplicates: false,
+  ),
+  GetPage(
+    name: '/note/read',
+    page: () => const TimeloomLinkRead(),
     transition: Transition.cupertino,
     popGesture: true,
     preventDuplicates: false,
